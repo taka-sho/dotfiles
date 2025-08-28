@@ -1,0 +1,20 @@
+packages:
+  darwin:
+    brews:
+      - 'gh'
+      - 'docker'
+      - 'nvm'
+      - 'pyenv'
+      - 'awscli'
+      - 'gcloud-cli'
+    casks:
+      - 'google-chrome'
+      - 'docker-desktop'
+      - 'visual-studio-code'
+      - 'postman'
+      - 'android-studio'
+      - 'slack'
+      - 'notion'
+      - 'sourcetree'
+      - 'figma'
+      - 'mysqlworkbench'
