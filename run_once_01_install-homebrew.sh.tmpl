@@ -2,6 +2,6 @@
 
 {{ if eq .chezmoi.os "darwin" }}
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -cert ~/.certificates/cert.pem -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 {{ end }}
