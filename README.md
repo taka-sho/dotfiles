@@ -8,7 +8,7 @@
 
 ## 1. クライアント証明書ファイル (.pem) のエクスポート
 アプリ「ターミナル」を開いてください。
-![step1-1](./assets/step1_export_pem/step1_1_open_terminal.png)
+![step1-1](https://github.com/user-attachments/assets/62a5cac1-d089-4805-ba84-e1989040a63a)
 
 ## 2. urlコマンド経由でのchezmoiインストール
 
