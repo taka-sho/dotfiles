@@ -7,7 +7,6 @@ packages:
       - 'nvm'
       - 'pyenv'
       - 'awscli'
-      - 'gcloud-cli'
     casks:
       - 'google-chrome'
       - 'docker-desktop'
