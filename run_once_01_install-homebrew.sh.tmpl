@@ -6,9 +6,9 @@
 
 
 if type brew > /dev/null 2>&1; then
-    echo すでにHomebrewがインストールされています。次のステップに進みます。
+    echo すでにHomebrew（brewコマンド）が利用可能です。次のステップに進みます。
 else
-    echo Homebrewをインストールします。
+    echo Homebrewのパスを追加します。
     echo >> $HOME/.zprofile
     echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
