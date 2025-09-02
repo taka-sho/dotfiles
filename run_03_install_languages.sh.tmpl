@@ -1,5 +1,9 @@
 #!/bin/bash
 
+if [ -s "$NVM_DIR/nvm.sh" ]; then
+  \. "$NVM_DIR/nvm.sh"
+fi
+
 if command -v nvm > /dev/null 2>&1; then
     {{ range .languages.nodejs.versions -}}
     nvm install {{ . | quote }}
