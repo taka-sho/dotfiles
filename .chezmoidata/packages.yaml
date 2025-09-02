@@ -18,3 +18,12 @@ packages:
       - 'sourcetree'
       - 'figma'
       - 'mysqlworkbench'
+languages:
+  nodejs:
+    # https://nodejs.org/en/about/previous-releases
+    versions:
+      - '20'
+      - '22'
+  python:
+    versions:
+      - '3.10.18'

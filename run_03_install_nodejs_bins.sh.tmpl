@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if type nvm > /dev/null 2>&1; then
+    {{ range .languages.nodejs.versions -}}
+    nvm install {{ . | quote }}
+    {{ end -}}
+else
+    echo nvmコマンドが見つかりません。Node.jsのインストールをスキップします。
+fi
+
+if type pyenv > /dev/null 2>&1; then
+    {{ range .languages.python.versions -}}
+    pyenv install {{ . | quote }}
+    {{ end -}}
+else
+    echo pyenvコマンドが見つかりません。Pythonのインストールをスキップします。
+fi
