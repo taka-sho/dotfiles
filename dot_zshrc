@@ -6,3 +6,6 @@ export NODE_EXTRA_CA_CERTS="$HOME/.certificates/cert.pem"
 
 # mysql-client
 export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+
+# direnv
+eval "$(direnv hook $SHELL)"

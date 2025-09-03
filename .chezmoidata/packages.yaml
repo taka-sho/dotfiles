@@ -12,6 +12,10 @@ packages:
       - 'watchman'
       - 'nkf'
       - 'mysql-client'
+      - 'tfenv'
+      - 'direnv'
+      - 'lefthook'
+      - 'terraform-docs'
     casks:
       - 'google-chrome'
       - 'docker-desktop'
@@ -23,6 +27,7 @@ packages:
       - 'sourcetree'
       - 'figma'
       - 'mysqlworkbench'
+      - 'iterm2'
 languages:
   ruby:
     versions:
