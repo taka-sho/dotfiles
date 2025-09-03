@@ -1,0 +1,8 @@
+# homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# nodenv
+eval "$(nodenv init -)"
+
+# rvm
+source $HOME/.rvm/scripts/rvm

@@ -4,9 +4,14 @@ packages:
       - 'git'
       - 'gh'
       - 'docker'
-      - 'nvm'
+      - 'nodenv'
       - 'pyenv'
       - 'awscli'
+      - 'pnpm'
+      - 'yarn'
+      - 'watchman'
+      - 'nkf'
+      - 'mysql-client'
     casks:
       - 'google-chrome'
       - 'docker-desktop'
@@ -19,11 +24,16 @@ packages:
       - 'figma'
       - 'mysqlworkbench'
 languages:
+  ruby:
+    versions:
+      - '3.2.2'
+    version_stable: '3.2.2'
   nodejs:
     # https://nodejs.org/en/about/previous-releases
     versions:
-      - '20'
-      - '22'
+      - '20.12.2'
+    version_stable: '20.12.2'
   python:
     versions:
       - '3.10.18'
+    version_stable: '3.10.18'

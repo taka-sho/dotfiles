@@ -2,17 +2,13 @@
 
 {{ if eq .chezmoi.os "darwin" }}
 
-/bin/bash -c "$(curl -cert ~/.certificates/cert.pem -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-
 if type brew > /dev/null 2>&1; then
     echo すでにHomebrew（brewコマンド）が利用可能です。次のステップに進みます。
 else
+    echo Homebrew（brewコマンド）をインストールします。
+    /bin/bash -c "$(curl -cert ~/.certificates/cert.pem -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     echo Homebrewのパスを追加します。
-    echo >> $HOME/.zprofile
-    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
-
 fi
 
 {{ end }}
