@@ -3,13 +3,14 @@
 {{ if eq .chezmoi.os "darwin" -}}
 
 brew bundle --file=/dev/stdin <<EOF
-
 {{ range .packages.darwin.brews -}}
 brew {{ . | quote }}
 {{ end -}}
 {{ range .packages.darwin.casks -}}
 cask {{ . | quote }}
 {{ end -}}
-
 EOF
+
+\curl -sSL https://get.rvm.io | bash -s stable
+
 {{ end -}}

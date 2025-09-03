@@ -1,4 +1,11 @@
-# nvm settings
-export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+# rvm
+export PATH="$PATH:$HOME/.rvm/bin/rvm"
+
+# CA Certificates for Node.js
+export NODE_EXTRA_CA_CERTS="$HOME/.certificates/cert.pem"
+
+# mysql-client
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+
+# direnv
+eval "$(direnv hook $SHELL)"

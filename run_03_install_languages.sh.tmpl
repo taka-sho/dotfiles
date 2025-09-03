@@ -2,12 +2,25 @@
 
 source ~/.zshrc
 
-if command -v nvm > /dev/null 2>&1; then
-    {{ range .languages.nodejs.versions -}}
-    nvm install {{ . | quote }}
+# install rvm
+if command -v rvm > /dev/null 2>&1; then
+    {{ range .languages.ruby.versions -}}
+    rvm install {{ . | quote }} --with-openssl-dir=$(brew --prefix openssl)
     {{ end -}}
+
+    rvm use {{ .languages.ruby.version_stable | quote }} --default
 else
-    echo nvmコマンドが見つかりません。Node.jsのインストールをスキップします。
+    echo rvmコマンドがみつかりません。Rubyのインストールをスキップします。
+fi
+
+if command -v nodenv > /dev/null 2>&1; then
+    {{ range .languages.nodejs.versions -}}
+    nodenv install {{ . | quote }}
+    {{ end -}}
+
+    nodenv global {{ .languages.nodejs.version_stable | quote }}
+else
+    echo nodenvコマンドが見つかりません。Node.jsのインストールをスキップします。
 fi
 
 if command -v pyenv > /dev/null 2>&1; then
