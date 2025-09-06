@@ -6,7 +6,6 @@ packages:
       - 'docker'
       - 'nodenv'
       - 'pyenv'
-      - 'java'
       - 'awscli'
       - 'pnpm'
       - 'yarn'
@@ -17,6 +16,7 @@ packages:
       - 'direnv'
       - 'lefthook'
       - 'terraform-docs'
+      - 'zulu@17'
     casks:
       - 'google-chrome'
       - 'docker-desktop'
