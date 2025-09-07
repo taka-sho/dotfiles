@@ -17,6 +17,7 @@ packages:
       - 'lefthook'
       - 'terraform-docs'
       - 'zulu@17'
+      - 'tree'
     casks:
       - 'google-chrome'
       - 'docker-desktop'
