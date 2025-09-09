@@ -16,7 +16,6 @@ packages:
       - 'direnv'
       - 'lefthook'
       - 'terraform-docs'
-      - 'zulu@17'
       - 'tree'
     casks:
       - 'google-chrome'
@@ -30,6 +29,7 @@ packages:
       - 'figma'
       - 'mysqlworkbench'
       - 'iterm2'
+      - 'zulu@17'
 languages:
   ruby:
     versions:
