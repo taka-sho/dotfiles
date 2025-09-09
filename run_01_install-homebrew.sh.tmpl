@@ -8,6 +8,7 @@ else
     echo Homebrew（brewコマンド）をインストールします。
     /bin/bash -c "$(curl -cert ~/.certificates/cert.pem -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     echo Homebrewのパスを追加します。
+    source ~/.zshrc
     eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
