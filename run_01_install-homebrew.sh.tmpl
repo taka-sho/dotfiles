@@ -9,6 +9,7 @@ else
     /bin/bash -c "$(curl -cert ~/.certificates/cert.pem -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     echo Homebrewのパスを追加します。
     source ~/.zshrc
+    source ~/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
