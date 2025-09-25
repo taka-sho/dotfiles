@@ -29,7 +29,7 @@ packages:
       - 'figma'
       - 'mysqlworkbench'
       - 'iterm2'
-      - 'zulu'
+      - 'zulu@17'
 languages:
   ruby:
     versions:
